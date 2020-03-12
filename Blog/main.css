@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(188, 200, 204);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-gap: 10px;
+
+}
+  
+.grid-container > div{
+        border: 10px double rgb(164, 177, 182);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgba(255, 255, 255, 0.527);
+        color: rgba(0, 0, 0, 0.616);
+}
+h1{
+    color: rgba(0, 0, 0, 0.664);
+}
+
+#header{
+grid-column: 1 /span 3;
+text-align: center;
+
+}
+
+#head01{
+grid-column: 1/span 1;
+text-align: center;
+}
+
+#post{
+grid-column: 2/span 2;
+}
+
+#head02{
+grid-column: 1/span 1;
+text-align: center;
+}
+
+#comment{
+grid-column: 2/span 2;
+text-align: center;
+}
+
+#back{
+grid-column: 1/span 3;
+text-align: center;
+}
+
+textarea{
+    width: 99%;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 /span 3;
+        }
+        
+    #head01{
+        grid-column: 2/span 1;
+        }
+        
+    #post{
+        grid-column: 1/span 3;
+        }
+        
+    #head02{
+        grid-column: 2/span 1;
+        }
+        
+    #comment{
+        grid-column: 1/span 3;
+        }
+
+    #back{
+        grid-column: 1/span 3;
+        }
+}
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    #header{
+        grid-column: 1 /span 3;
+        }
+        
+    #head01{
+        grid-column: 1/span 3;
+        }
+        
+    #post{
+        grid-column: 1/span 3;
+        }
+        
+    #head02{
+        grid-column: 1/span 3;
+        }
+        
+    #comment{
+        grid-column: 1/span 3;
+        }
+        
+    #back{
+        grid-column: 1/span 3;
+        }
+
+
+}

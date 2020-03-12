@@ -1,0 +1,136 @@
+body{
+	background-color: rgb(255, 239, 185);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 20% auto 25%;
+	grid-gap: 10px;
+}
+
+.grid-container > div{
+	border: 10px double rgb(255, 255, 255);
+	font-size: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+    background-color: rgb(208, 236, 255);
+}
+
+#header{
+	grid-column: 1/span 3;
+	background-color: rgb(255, 193, 182);
+}
+
+#main1{
+	grid-column: 1/span 1;
+}
+#main2{
+	grid-column: 2/span 1;
+}
+
+#right{
+	grid-column: 3/span 1;
+	background-color: rgb(240, 219, 255);
+}
+
+#footer{
+	grid-column: 1/span 3;
+	background-color: rgb(255, 250, 226);
+}
+
+h2{
+	font-size: xx-large;
+	background-color: white;
+	color: saddlebrown;
+}
+@media only screen and (max-width: 768px) {
+
+	.grid-container {
+		display: grid;
+        grid-template-columns: 35% auto;
+        grid-gap: 10px;
+	}
+
+	#header{
+		grid-column: 1/span 2;
+	}
+	
+	#main1{
+		grid-column: 1/span 1;
+	}
+	#main2{
+		grid-column: 2/span 1;
+	}
+	
+	#right{
+		grid-column: 1/span 2;
+	}
+	
+	#footer{
+		grid-column: 1/span 2;
+	}
+	h2{
+		font-size: x-large;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+	}
+
+	#header{
+		grid-column: 1/span 1;
+		
+	}
+	
+	#main1{
+		grid-column: 1/span 1;
+	}
+	#main2{
+		grid-column: 1/span 1;
+	}
+	
+	#right{
+		grid-column: 1/span 1;
+	}
+	
+	#footer{
+		grid-column: 1/span 1;
+	}
+
+	
+}
+
+h1{
+	background-color: rgb(255, 193, 182);
+	color: rgb(95, 55, 27);
+}
+
+.bullets{
+	font-size: large;
+	text-align: left;
+}
+.howto{
+	text-align: center;
+}
+ul{
+	text-align: left;
+	color:gray;
+	font-size: large;
+}
+img{
+	width: 50%;
+	
+}
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.flex_container > div{
+	margin: auto;
+}

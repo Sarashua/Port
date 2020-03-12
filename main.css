@@ -1,0 +1,238 @@
+body{
+	background-color: rgb(217, 228, 235);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 40% 20% 20% 20%;
+	grid-gap: 10px;
+}
+
+.grid-container > div{
+	border: 10px double rgb(255, 255, 255);
+    font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* text-align: center; */
+    background-color: rgba(255, 255, 255, 0.521);
+}
+
+#header{
+grid-column: 1 /span 1;
+text-align: center;
+font-size: 25px;
+}
+
+#header2{
+grid-column: 2/span 3;
+font-size: 25px;
+text-align: center;
+}
+
+#pic{
+grid-column: 1/span 1;
+}
+
+#hobbies{
+grid-column: 2/span 1;
+}
+
+#skills{
+    grid-column: 3/span 1;
+}
+#inerested{
+    grid-column: 4/span 1;
+}
+
+#something{
+grid-column: 1/span 1;
+}
+
+#contact{
+    grid-column: 2/span 2;
+}
+#link{
+    grid-column: 4/span 1;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.568);
+}
+li{
+    color: rgba(0, 0, 0, 0.377);
+}
+h1{
+    color: rgba(0, 0, 0, 0.781);
+}
+h2{
+    color: rgba(0, 0, 0, 0.781);
+}
+
+@media only screen and (max-width: 768px){
+
+    .grid-container {
+		display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 10px;
+	}
+    #header{
+        grid-column: 1 /span 1;
+        font-size: 14px;
+        }
+        
+        #header2{
+        grid-column: 2/span 2;
+        font-size: 20px;
+        }
+        
+        #pic{
+        grid-column: 1/span 3;
+        }
+        
+        #hobbies{
+        grid-column: 1/span 1;
+        }
+        
+        #skills{
+            grid-column: 2/span 1;
+        }
+        #inerested{
+            grid-column: 3/span 1;
+        }
+        
+        #something{
+        grid-column: 1/span 3;
+        }
+        
+        #contact{
+            grid-column: 1/span 2;
+        }
+    
+        #link{
+            grid-column: 3/span 1;
+        }
+
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    #header{
+        grid-column: 1 /span 1;
+        font-size: 16px;
+        }
+        
+        #header2{
+        grid-column: 1/span 1;
+        font-size: 20px;
+        }
+        
+        #pic{
+        grid-column: 1/span 1;
+        }
+        
+        #hobbies{
+        grid-column: 1/span 1;
+        }
+        
+        #skills{
+            grid-column: 1/span 1;
+        }
+        #inerested{
+            grid-column: 1/span 1;
+        }
+        
+        #something{
+        grid-column: 1/span 1;
+        }
+        
+        #contact{
+            grid-column: 1/span 1;
+        }
+    
+        #link{
+            grid-column: 1/span 1;
+        }
+
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-gap: 10px;
+}
+
+.grid-container2 > div{
+	border: 10px double rgb(255, 255, 255);
+    font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+#head{
+    grid-column: 1/span 3;
+}
+#concept{
+    grid-column: 2/span 1;
+}
+#cha{
+    grid-column: 2/span 1;
+}
+#boss{
+    grid-column: 2/span 1;
+}
+#more{
+    grid-column: 1/span 3;
+    text-align: left;
+}
+@media only screen and (max-width: 768px) {
+
+	.grid-container2 {
+		display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-gap: 10px;
+	}
+    #head{
+        grid-column: 1/span 3;
+    }
+    #concept{
+        grid-column: 2/span 1;
+    }
+    #cha{
+        grid-column: 2/span 1;
+    }
+    #boss{
+        grid-column: 2/span 1;
+    }
+    #more{
+        grid-column: 1/span 3;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+	.grid-container2 {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+	}
+    #head{
+        grid-column: 1/span 1;
+    }
+    #concept{
+        grid-column: 1/span 1;
+    }
+    #cha{
+        grid-column: 1/span 1;
+    }
+    #boss{
+        grid-column: 1/span 1;
+    }
+    #more{
+        grid-column: 1/span 1;
+    }
+}

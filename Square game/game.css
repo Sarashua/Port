@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.grid-container > div{
+	border: 10px double rgb(255, 255, 255);
+	font-size: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+    background-color: rgb(208, 236, 255);
+}
+
+#header {
+   grid-column: 1/ span 1;
+   background-color: rgb(228, 238, 238);
+}
+h1{
+    font-size: 80 px;
+    font-style: border;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#input {
+    grid-column: 1/span 1;
+    text-align: center;
+}
+
+#squares-container {
+    grid-column: 1/span 1;
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#squares-layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(228, 238, 238);
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgb(207, 207, 207);
+}
+
+.red{
+    background-color: rgb(145, 59, 59); 
+}
+.blue{
+    background-color: rgb(65, 65, 165); 
+}
+
+.green{
+    background-color: rgb(79, 126, 58); 
+}
+
+#back {
+    grid-column:1/span 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-style: border;
+    background-color: rgb(175, 84, 102);
+}
+
+@media only screen and (max-width: 500px){
+
+.grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+
+}
